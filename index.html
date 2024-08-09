@@ -8,13 +8,17 @@
     <style>
         /* Body text font */
         body {
-            font-family: "Nanum Gothic Coding", monospace;
-            font-weight: 400;
+            .noto-sans-mono-<uniquifier> {
+            font-family: "Noto Sans Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
             font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
             margin: 0;
             padding: 0;
             background-color: #faebd7; /* Beige */
-            color: #191970; /*Some blue*/
+            color: #8b0000; /*Some blue*/
         }
         .container {
             max-width: 1200px;
@@ -24,19 +28,19 @@
       /* Specific text and background color for the header */
         header {
             background-color: #deb887; /* some wood color */
-            color: #191970; /* same blue */
+            color: #8b0000; /* same blue */
             padding: 20px;
-            text-align: right;
+            text-align: left;
         }
         /* Specific text color for headings */
          h1, h2 {
             font-family: "Times New Roman", serif;
-            color: #191970; /* same blue */
+            color: #8b0000; /* same blue */
         }
         /* Footer with different background and text color */
         footer {
             background-color: #deb887; /* Darker teal background */
-            color: #191970; /* White text */
+            color: #8b0000; /* White text */
             padding: 20px;
             text-align: center;
         }
@@ -44,7 +48,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1>The Ongoing Flight of My Journey</h1>
     </header>
     <div class="container">
         <h2>About Me</h2>
