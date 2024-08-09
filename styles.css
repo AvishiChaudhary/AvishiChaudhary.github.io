@@ -1,28 +1,104 @@
+/* Basic body and header styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Nanum Gothic Coding", monospace;
+    background-color: #001f3f;
+    color: #ffffff;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
+
+/* Header styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    padding: 50px 0;
+    background-color: #001f3f;
+    color: #ffffff;
 }
-section {
-    margin: 2em auto;
-    padding: 1em;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+header h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 255, 0.7);
 }
-h2 {
-    color: #333;
+
+/* Profile picture styling */
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
+
+/* About Me section */
+.about-me p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #87ceeb;
+}
+
+/* Quotes slider */
+.quotes-slider {
+    margin-top: 30px;
+    font-style: italic;
+    color: #87ceeb;
+    font-size: 1.1em;
+}
+
+/* Menu icon */
+.menu-icon img {
+    width: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* Menu */
+nav#menu {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+nav#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#menu ul li {
+    margin: 10px 0;
+}
+
+nav#menu ul li a {
+    color: #87ceeb;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: #fff;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #001f3f;
+    color: #ffffff;
+}
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #001f3f; /* Space color */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+.scroll-to-top img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Show scroll-to-top button when scrolled */
+body.scrolled .scroll-to-top {
+    display: block;
 }
