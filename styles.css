@@ -50,6 +50,7 @@ header h1 {
     width: 40px;
     margin-top: 40px;
     cursor: pointer;
+    content: url('images/clouds.png'); /* Replace 'menu-icon.png' with your actual file name */
 }
 
 /* Menu */
@@ -91,6 +92,9 @@ footer {
     padding: 10px;
     cursor: pointer;
     display: none; /* Initially hidden */
+    background-image: url('images/project.png'); /* Replace 'scroll-icon.png' with your actual file name */
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .scroll-to-top img {
