@@ -4,69 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avishi Chaudhary</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>The Ongoing Flight of My Journey</h1>
     </header>
 
-    <section id="home">
-        <div class="profile-picture">
-            <img src="images/your-photo.jpg" alt="Avishi Chaudhary">
-        </div>
-        <div class="about-me">
-            <p>Hello! I am Avishi Chaudhary, a daughter from an immigrant household. This is why, airplanes and the sky have played a huge role in getting me where I am. Me and my parents moved to the US in December 2019 from the Northern part of India, Rajasthan, and recently got US citizenship! My interests in design, space, and the workings of machinery, have led me to major in Mechanical Engineering (entering my Junior Year next semester) at the New Jersey Institute of Technology. When not thinking about making a career at NASA or reading space news, I help others in my community by being part of Community groups cooking for myself and my parents, or helping freshmen move in into college. I can't wait to share all my involvement and experiences!</p>
-        </div>
-        <div class="quotes-slider">
-            <div class="quote">"The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt</div>
-            <div class="quote">"Innovation distinguishes between a leader and a follower." – Steve Jobs</div>
-            <!-- Add more quotes as needed -->
-        </div>
-        <div class="menu-icon">
-            <a href="#menu"><img src="images/cloud-icon.svg" alt="Menu"></a>
-        </div>
-    </section>
+    <!-- Profile Picture -->
+    <div class="profile-picture">
+        <img src="images/your-picture.jpg" alt="Avishi Chaudhary"> <!-- Replace with your image path -->
+    </div>
 
+    <!-- About Me Section -->
+    <div class="about-me">
+        <p>Hi, I'm Avishi Chaudhary, and this is my personal space where I share my projects, passions, and journey. Welcome aboard!</p>
+    </div>
+
+    <!-- Quotes Slider -->
+    <div class="quotes-slider">
+        <p>"Your favorite quote here"</p>
+        <p>"Another inspiring quote"</p>
+    </div>
+
+    <!-- Menu Icon -->
+    <div class="menu-icon">
+        <img src="images/clouds.png" alt="Menu Icon"> <!-- Replace with your cloud icon image path -->
+    </div>
+
+    <!-- Menu -->
     <nav id="menu">
         <ul>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#community-service">Community Service</a></li>
-            <li><a href="#honors-achievements">Honors & Achievements</a></li>
+            <li><a href="#honors-achievements">Honors/Achievements</a></li>
             <li><a href="#journal">Journal</a></li>
         </ul>
     </nav>
 
-    <!-- Add sections for Projects, Community Service, Honors/Achievements, and Journal here -->
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <!-- The button itself is styled using CSS -->
+    </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Avishi Chaudhary. All rights reserved.</p>
     </footer>
 
-    <!-- Scroll-to-Top Button -->
-    <a href="#" class="scroll-to-top">
-        <img src="images/rocket-icon.svg" alt="Scroll to Top">
-    </a>
-
-    <script>
-        // Show or hide the scroll-to-top button
-        window.addEventListener('scroll', function() {
-            const scrollTopButton = document.querySelector('.scroll-to-top');
-            if (window.scrollY > 200) {
-                scrollTopButton.style.display = 'block';
-            } else {
-                scrollTopButton.style.display = 'none';
-            }
-        });
-
-        // Smooth scroll to top
-        document.querySelector('.scroll-to-top').addEventListener('click', function(event) {
-            event.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
