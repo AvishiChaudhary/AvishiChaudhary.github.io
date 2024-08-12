@@ -46,11 +46,17 @@ header h1 {
 }
 
 /* Menu icon */
-.menu-icon img {
-    width: 40px;
-    margin-top: 40px;
+.menu-icon {
+    position: fixed;
+    top: 20px; /* Adjust distance from top */
+    right: 20px; /* Adjust distance from right */
+    z-index: 1000;
     cursor: pointer;
-    content: url('images/clouds.png'); /* Replace 'menu-icon.png' with your actual file name */
+}
+
+.menu-icon img {
+    width: 40px; /* Adjust size of the icon */
+    content: url('images/clouds.png'); /* Replace 'clouds.png' with your actual file name */
 }
 
 /* Menu */
@@ -74,32 +80,26 @@ nav#menu ul li a {
     font-size: 1.2em;
 }
 
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 20px 0;
-    background-color: #001f3f;
-    color: #ffffff;
-}
-
-/* Scroll-to-Top Button */
+/* Scroll to top icon */
 .scroll-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #001f3f; /* Space color */
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    display: none; /* Initially hidden */
-    background-image: url('images/project.png'); /* Replace 'scroll-icon.png' with your actual file name */
+    bottom: 20px; /* Distance from the bottom of the page */
+    right: 20px; /* Distance from the right side */
+    width: 50px; /* Adjust width to fit the icon properly */
+    height: 50px; /* Adjust height to fit the icon properly */
+    background-image: url('images/rocket.png'); /* Replace with your image path */
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    border: none; /* Removes any border */
+    outline: none; /* Removes any outline */
 }
 
-.scroll-to-top img {
-    width: 30px;
-    height: 30px;
+/* Hide the default link text */
+.scroll-to-top a {
+    display: none;
 }
 
 /* Show scroll-to-top button when scrolled */
