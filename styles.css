@@ -13,13 +13,34 @@ header {
     padding: 50px 0;
     background-color: #A3C6E8; /* Adjusted to blend with the background */
     color: #ffffff;
+    position: relative;
 }
 
+/* Header title */
 header h1 {
     font-family: "Times New Roman", serif;
     font-size: 2.5em;
     margin: 0;
     text-shadow: none; /* Removed halo effect */
+}
+
+/* Menu icon styling */
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-icon img {
+    width: 40px;
+}
+
+.menu-icon p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #ffffff;
 }
 
 /* Profile picture styling */
@@ -44,47 +65,56 @@ header h1 {
 
 /* Quotes slider */
 .quotes-slider {
-    position: relative;
     margin-top: 30px;
     font-style: italic;
     color: #006400; /* Adjusted to match */
     font-size: 1.1em;
     width: 60%;
     margin: 0 auto;
-    overflow: hidden; /* Ensure quotes don't overflow outside the container */
-    height: 60px; /*Adjust height to fit your quotes*/
 }
 
 .quotes-slider .quote {
-    display: none; /* Hide all quotes by default */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
+    display: none;
 }
 
-/* Make sure the first quote is visible initially */
-.quotes-slider .quote:first-child {
+.quotes-slider .quote.visible {
     display: block;
 }
 
-/* Menu icon */
-.menu-icon img {
-    width: 40px;
-    cursor: pointer;
-    content: url('images/clouds.png');
+/* Menu */
+nav#menu {
+    display: none;
     position: absolute;
-    top: 20px;
+    top: 60px;
     right: 20px;
+    background-color: #ffffff;
+    color: #006400; /* Green tone for text */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.menu-icon span {
-    display: block;
-    font-size: 0.8em;
-    color: #ffffff;
-    margin-top: 5px;
-    text-align: center;
+nav#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#menu ul li {
+    margin: 10px 0;
+}
+
+nav#menu ul li a {
+    color: #006400;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Contact section */
+.contact {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #006400; /* Adjusted to match */
 }
 
 /* Scroll to top icon */
@@ -102,37 +132,11 @@ header h1 {
     z-index: 1000;
 }
 
-/* Menu */
-nav#menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #ffffff;
-    color: #006400; /* Green tone for text */
-    padding: 10px;
-    border-radius: 8px;
-}
-
-nav#menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav#menu ul li {
-    margin: 10px 0;
-}
-
-nav#menu ul li a {
-    color: #006400;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
 /* Footer */
 footer {
     margin-top: 50px;
     padding: 20px 0;
     background-color: #A3C6E8;
     color: #ffffff;
+    text-align: center;
 }
