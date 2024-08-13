@@ -44,12 +44,28 @@ header h1 {
 
 /* Quotes slider */
 .quotes-slider {
+    position: relative;
     margin-top: 30px;
     font-style: italic;
     color: #006400; /* Adjusted to match */
     font-size: 1.1em;
     width: 60%;
     margin: 0 auto;
+    overflow: hidden; /* Ensure quotes don't overflow outside the container */
+}
+
+.quotes-slider .quote {
+    display: none; /* Hide all quotes by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Make sure the first quote is visible initially */
+.quotes-slider .quote:first-child {
+    display: block;
 }
 
 /* Menu icon */
