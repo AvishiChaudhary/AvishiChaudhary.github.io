@@ -13,34 +13,13 @@ header {
     padding: 50px 0;
     background-color: #A3C6E8; /* Adjusted to blend with the background */
     color: #ffffff;
-    position: relative;
 }
 
-/* Header title */
 header h1 {
     font-family: "Times New Roman", serif;
     font-size: 2.5em;
     margin: 0;
     text-shadow: none; /* Removed halo effect */
-}
-
-/* Menu icon styling */
-.menu-icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    text-align: center;
-}
-
-.menu-icon img {
-    width: 40px;
-}
-
-.menu-icon p {
-    margin: 0;
-    font-size: 0.8em;
-    color: #ffffff;
 }
 
 /* Profile picture styling */
@@ -71,50 +50,57 @@ header h1 {
     font-size: 1.1em;
     width: 60%;
     margin: 0 auto;
+    position: relative;
 }
 
-.quotes-slider .quote {
+.quotes {
+    overflow: hidden;
+}
+
+.quote {
     display: none;
 }
 
-.quotes-slider .quote.visible {
+.quote.visible {
     display: block;
 }
 
-/* Menu */
-nav#menu {
-    display: none;
+.prev, .next {
+    background-color: #006400;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
     position: absolute;
-    top: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Menu icon */
+.menu-icon img {
+    width: 40px;
+    cursor: pointer;
+    content: url('images/clouds.png');
+    position: absolute;
+    top: 20px;
     right: 20px;
-    background-color: #ffffff;
-    color: #006400; /* Green tone for text */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-nav#menu ul {
-    list-style-type: none;
-    padding: 0;
+.menu-icon p {
+    display: block;
+    font-size: 0.8em;
+    color: #ffffff;
     margin: 0;
-}
-
-nav#menu ul li {
-    margin: 10px 0;
-}
-
-nav#menu ul li a {
-    color: #006400;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/* Contact section */
-.contact {
-    margin-top: 30px;
-    font-size: 1.2em;
-    color: #006400; /* Adjusted to match */
+    text-align: center;
 }
 
 /* Scroll to top icon */
@@ -132,11 +118,37 @@ nav#menu ul li a {
     z-index: 1000;
 }
 
+/* Menu */
+nav#menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #006400; /* Green tone for text */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#menu ul li {
+    margin: 10px 0;
+}
+
+nav#menu ul li a {
+    color: #006400;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 /* Footer */
 footer {
     margin-top: 50px;
     padding: 20px 0;
     background-color: #A3C6E8;
     color: #ffffff;
-    text-align: center;
 }
