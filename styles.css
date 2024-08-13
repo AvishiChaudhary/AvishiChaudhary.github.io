@@ -1,46 +1,25 @@
 /* Basic body and header styling */
 body {
     font-family: "Nanum Gothic Coding", monospace;
-    background-color: #001f3f;
+    background-color: #A3C6E8; /* Adjusted to the blue from the image */
     color: #ffffff;
+    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* Header styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #001f3f;
+    padding: 50px 0;
+    background-color: #A3C6E8; /* Adjusted to blend with the background */
+    color: #ffffff;
 }
 
 header h1 {
     font-family: "Times New Roman", serif;
     font-size: 2.5em;
     margin: 0;
-    color: #ffffff;
-    text-shadow: 0px 0px 10px rgba(0, 0, 255, 0.7);
-}
-
-/* Menu icon */
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-}
-
-.menu-icon img {
-    width: 40px;
-}
-
-.menu-icon p {
-    margin: 5px 0 0;
-    font-size: 0.9em;
-    color: #87ceeb;
+    text-shadow: none; /* Removed halo effect */
 }
 
 /* Profile picture styling */
@@ -53,54 +32,42 @@ header h1 {
 
 /* About Me section */
 .about-me {
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: left;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .about-me p {
     font-size: 1.2em;
-    line-height: 1.6em;
-    color: #87ceeb;
+    margin-top: 20px;
+    color: #006400; /* Adjusted to a green tone from the image */
 }
 
 /* Quotes slider */
 .quotes-slider {
-    margin: 30px auto;
-    max-width: 500px;
-    color: #87ceeb;
-    font-size: 1.1em;
+    margin-top: 30px;
     font-style: italic;
-    text-align: center;
+    color: #006400; /* Adjusted to match */
+    font-size: 1.1em;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.quotes-slider .quote {
-    display: none;
+/* Menu icon */
+.menu-icon img {
+    width: 40px;
+    cursor: pointer;
+    content: url('images/clouds.png');
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
-.quotes-slider .quote.active {
+.menu-icon span {
     display: block;
-}
-
-/* Menu */
-nav#menu {
-    display: none; /* Initially hidden */
-    margin-top: 20px;
-}
-
-nav#menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav#menu ul li {
-    margin: 10px 0;
-}
-
-nav#menu ul li a {
-    color: #87ceeb;
-    text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.8em;
+    color: #ffffff;
+    margin-top: 5px;
+    text-align: center;
 }
 
 /* Scroll to top icon */
@@ -116,11 +83,39 @@ nav#menu ul li a {
     background-position: center;
     cursor: pointer;
     z-index: 1000;
-    border: none;
-    outline: none;
 }
 
-/* Hide the default link text */
-.scroll-to-top a {
+/* Menu */
+nav#menu {
     display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #006400; /* Green tone for text */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#menu ul li {
+    margin: 10px 0;
+}
+
+nav#menu ul li a {
+    color: #006400;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #A3C6E8;
+    color: #ffffff;
 }
