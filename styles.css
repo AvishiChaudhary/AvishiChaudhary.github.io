@@ -52,6 +52,7 @@ header h1 {
     width: 60%;
     margin: 0 auto;
     overflow: hidden; /* Ensure quotes don't overflow outside the container */
+    height: 60px; /*Adjust height to fit your quotes*/
 }
 
 .quotes-slider .quote {
