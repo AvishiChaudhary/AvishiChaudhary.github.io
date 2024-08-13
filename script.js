@@ -2,16 +2,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const quotes = document.querySelectorAll('.quotes-slider .quote');
     let currentQuoteIndex = 0;
 
-    function showNextQuote() {
-        quotes[currentQuoteIndex].classList.remove('visible');
-        currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-        quotes[currentQuoteIndex].classList.add('visible');
+    function showQuote(index) {
+        quotes.forEach((quote, i) => {
+            quote.classList.toggle('visible', i === index);
+        });
     }
 
-    // Start with the first quote visible
-    quotes[currentQuoteIndex].classList.add('visible');
+    function showNextQuote() {
+        currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+        showQuote(currentQuoteIndex);
+    }
 
-    setInterval(showNextQuote, 3000); // Change quote every 3 seconds
+    function showPrevQuote() {
+        currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
+        showQuote(currentQuoteIndex);
+    }
+
+    // Initial display
+    showQuote(currentQuoteIndex);
+
+    // Event listeners for buttons
+    document.querySelector('.next').addEventListener('click', showNextQuote);
+    document.querySelector('.prev').addEventListener('click', showPrevQuote);
 });
 
 // Toggle menu visibility
