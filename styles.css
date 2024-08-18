@@ -1,154 +1,39 @@
-/* Basic body and header styling */
-body {
-    font-family: "Nanum Gothic Coding", monospace;
-    background-color: #A3C6E8; /* Adjusted to the blue from the image */
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header styling */
-header {
-    padding: 50px 0;
-    background-color: #A3C6E8; /* Adjusted to blend with the background */
-    color: #ffffff;
-}
-
-header h1 {
-    font-family: "Times New Roman", serif;
-    font-size: 2.5em;
-    margin: 0;
-    text-shadow: none; /* Removed halo effect */
-}
-
-/* Profile picture styling */
-.profile-picture img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-/* About Me section */
-.about-me {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.about-me p {
-    font-size: 1.2em;
-    margin-top: 20px;
-    color: #006400; /* Adjusted to a green tone from the image */
-}
-
-/* Quotes slider */
 .quotes-slider {
-    margin-top: 30px;
-    font-style: italic;
-    color: #006400; /* Adjusted to match */
-    font-size: 1.1em;
-    width: 60%;
-    margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quotes {
-    overflow: hidden;
+    text-align: center;
+    width: 80%;
 }
 
 .quote {
     display: none;
+    font-size: 1.5em;
+    padding: 10px;
 }
 
 .quote.visible {
     display: block;
 }
 
-.prev, .next {
-    background-color: #006400;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
+.arrow-left, .arrow-right {
     cursor: pointer;
+    font-size: 2em;
+    color: #333; /* Customize arrow color */
+    user-select: none;
+    padding: 0 20px;
+}
+
+.arrow-left {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 10px;
 }
 
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-/* Menu icon */
-.menu-icon img {
-    width: 40px;
-    cursor: pointer;
-    content: url('images/clouds.png');
+.arrow-right {
     position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.menu-icon p {
-    display: block;
-    font-size: 0.8em;
-    color: #ffffff;
-    margin: 0;
-    text-align: center;
-}
-
-/* Scroll to top icon */
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-image: url('images/rocket.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-/* Menu */
-nav#menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #ffffff;
-    color: #006400; /* Green tone for text */
-    padding: 10px;
-    border-radius: 8px;
-}
-
-nav#menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav#menu ul li {
-    margin: 10px 0;
-}
-
-nav#menu ul li a {
-    color: #006400;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 20px 0;
-    background-color: #A3C6E8;
-    color: #ffffff;
+    right: 10px;
 }
